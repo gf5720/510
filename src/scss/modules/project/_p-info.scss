@@ -1,0 +1,134 @@
+$root: '.p-info';
+
+@keyframes ARROW_SIDE {
+    0%{
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(0px);
+        opacity: 0.5;
+    }
+    99%{
+        transform: translateX(20px);
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+        transform: translateX(20px);
+    }
+}
+
+#{$root} {
+    text-align: center;
+    margin-top: 100px;
+    padding-bottom: 150px;
+    .header{
+        .t{
+            font-size: 27px;
+            letter-spacing: 0.14em;
+            // font-weight: bold;
+        }
+    }
+    .body{
+        margin-top: 40px;
+        position: relative;
+        svg{
+            position: absolute;
+            top: 150px;
+            left: 50%;
+            margin-left: -50px;
+            width: 100px;
+            opacity: 0.5;
+            animation: ARROW_SIDE 1.5s $ease-out infinite;
+            @include max-screen($breakpoint-sp) {
+                display: none;
+            }
+        }
+    }
+    &__list{
+        display: flex;
+        justify-content: center;
+        @include max-screen($breakpoint-sp) {
+            flex-direction: column;
+        }
+    }
+    &__item{
+        margin-top: 50px;
+        >.t{
+            font-size: 22px;
+            letter-spacing: 0.14em;
+        }
+        .inner{
+            margin-top: 30px;
+        }
+        .item{
+            // display: flex;
+            // justify-content: flex-start;
+            width: 500px;
+            margin: 30px auto 0;
+            text-align: center;
+            @include max-screen($breakpoint-sp) {
+                width: auto;
+            }
+            .l{
+                white-space: nowrap;
+                font-size: 16px;
+                letter-spacing: 0.14em;
+                display: block;
+            }
+            .r{
+                font-size: 16px;
+                letter-spacing: 0.14em;
+                line-height: 25px;
+                // position: relative;
+                // top: -8px;
+                display: block;
+                margin-top: 5px
+            }
+        }
+    }
+    &__contact{
+        margin-top: 100px;
+        p{
+            font-size: 18px;
+            letter-spacing: 0.14em;
+            line-height: 40px;
+            @include max-screen(350) {
+                font-size: 16px;
+                letter-spacing: 0.1em;
+            }
+        }
+        .btn{
+            margin-top: 50px;
+            display: inline-block;
+            max-width: 450px;
+            width: 100%;
+            height: 80px;
+            line-height: 75px;
+            font-size: 18px;
+            letter-spacing: 0.14em;
+            border: 1px solid #000;
+            color: #FFF;
+            position: relative;
+            @include max-screen($breakpoint-sp) {
+                width: 80%;
+            }
+            &:before{
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #000;
+                z-index: -1;
+            }
+            &:hover{
+                // color: #000;
+                text-decoration: none;
+            }
+        }
+    }
+}

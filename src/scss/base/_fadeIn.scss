@@ -1,0 +1,316 @@
+//画面外の状態を指定
+
+@keyframes ICON_DOWN{
+  0%{
+    opacity: 0;
+    transform: translate(0,-10px) scaleX(0.5) scaleY(1);
+  }
+  // 20%{
+  //   opacity: 1;
+  //   transform: translate(0,0) scaleX(1.5) scaleY(0.5);
+  // }
+  60%{
+    opacity: 1;
+    transform: translate(0,0) scaleX(1.5) scaleY(0.5);
+  }
+  // 70%{
+  //   opacity: 1;
+  //   transform: translate(0,0) scaleX(1.5) scaleY(0.5);
+  // }
+  100%{
+    opacity: 1;
+    transform: translate(0,0) scaleX(1) scaleY(1);
+  }
+}
+
+.fadeIn {
+  opacity: 0;
+}
+
+.fadeInUp {
+  transform: translateY(80px);
+  opacity: 0;
+}
+
+.fadeInUpOver {
+  transform: translateY(40px);
+  opacity: 0;
+}
+
+.fadeInDown {
+  transform: translateY(-30px);
+  opacity: 0;
+}
+
+.fadeInDownOver {
+  transform: translateY(-40px);
+  opacity: 0;
+}
+
+.fadeInLeft {
+  transform: translateX(-50px);
+  opacity: 0;
+}
+
+.fadeInLeftOver {
+  transform: translateX(-30px);
+  opacity: 0;
+}
+
+.fadeInRight {
+  transform: translateX(20px);
+  opacity: 0;
+}
+
+.fadeInRightOver {
+  transform: translateX(30px);
+  opacity: 0;
+}
+
+.fadeInRightSkew {
+  transform: translateX(30px) skewX(-10deg);
+  opacity: 0;
+}
+
+.fadeInLeftSkew {
+  transform: translateX(-30px) skewX(10deg);
+  opacity: 0;
+}
+
+.maskSlideIn{
+  transform: translate(-120%,0);
+  overflow: hidden;
+  @media screen and (max-width: $breakpoint-sp) {
+    transform: translate(0,0);
+  }
+  .js-inner{
+    transform: translate(100%,0);
+    @media screen and (max-width: $breakpoint-sp) {
+      transform: translate(0,0);
+    }
+  }
+}
+
+.scaleUpIn {
+  transform: scale(.7);
+  opacity: 0;
+}
+
+.scaleUpInOver {
+  transform: scale(.85);
+  opacity: 0;
+}
+
+.scaleDownIn {
+  transform: scale(1.07);
+  opacity: 0;
+}
+
+.scaleDownInOver {
+  transform: scale(1.15) translate(-30px, 0);
+  opacity: 0;
+}
+
+.scalePop {
+  transform: scale(0.5) translate(-30px, 0) rotate(15deg);
+  transform-origin: center center;
+}
+
+.slideIn {
+  transform: scale(0);
+  transform-origin: center center;
+}
+
+.leanInLeft {
+  opacity: 0;
+  transform: translate3d(-40px, -40px, 0) rotate(-15deg);
+  transform-origin: 0% 100%;
+}
+
+.inBtn{
+  .c-btn{
+    .top{
+      transform: skew(-40deg) scale(0);
+      transform-origin: center center;
+    }
+    .right{
+      transform: skewY(-50deg) scale(0);
+      transform-origin: center center;
+    }
+  }
+}
+
+.inTitle{
+  svg{
+    path,polygon,rect{
+      @for $i from 0 through 25 {
+        &:nth-of-type(#{$i}){
+          opacity: 0;
+          transform: translate(-#{random(100)}px,#{random(100)}px)
+        }
+      }
+    }
+  }
+}
+
+.inList{
+  .inItem{
+    svg{
+      transform: translate(0,-10px) scaleX(0.5);
+      transform-origin: bottom center;
+    }
+  }
+}
+
+.maskDown {
+  overflow: hidden;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    background: $color-black;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: 11;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+  }
+}
+
+.inShip{
+  transform: translate(50px,0)
+}
+
+//画面内へ進入時に付与される値※必ず最下部に記述
+.is-invasion {
+  // transform: none !important;
+  transform: scale(1) translate(0, 0) rotate(0deg) !important;
+  opacity: 1 !important;
+  transition: transform .5s, opacity .25s ease-in;
+}
+
+.is-invasion.maskSlideIn{
+  transition: transform .5s .2s $ease-outin;
+  .js-inner{
+    transform: scale(1) translate(0, 0) rotate(0deg) !important;
+    transition: transform .5s .2s $ease-outin;
+  }
+}
+
+.is-invasion.inList{
+  .inItem{
+    @for $i from 0 through 20 {
+      &:nth-of-type(#{$i}){
+        svg{
+          animation: ICON_DOWN .5s #{$i * 0.1}s $ease-in both;
+        }
+      }
+    }
+  }
+}
+
+.is-invasion.inTitle{
+  svg{
+    path,polygon,rect{
+      @for $i from 0 through 25 {
+        &:nth-of-type(#{$i}){
+          transform: scale(1) translate(0, 0) rotate(0deg) !important;
+          opacity: 1 !important;
+          transition: transform .5s #{$i * 0.03 + 0.15}s, opacity .25s #{$i * 0.03 + 0.15}s ease-in;
+        }
+      }
+    }
+  }
+}
+
+.is-invasion.inBtn .c-btn{
+  .top{
+    transform: skew(-40deg) scale(1);
+    transform-origin: center center;
+    transition: transform .5s $ease-inout;
+  }
+  .right{
+    transform: skewY(-50deg) scale(1);
+    transform-origin: center center;
+    transition: transform .5s $ease-inout;
+  }
+}
+
+.is-invasion.inShip{
+  transition: transform 5s ease-out;
+}
+
+.is-invasion.fadeText{
+  >span{
+    @for $i from 0 through 15 {
+      &:nth-of-type(#{$i}) {
+        >span{
+          transition: transform .4s #{$i * 0.05}s cubic-bezier(0.21, 0.5, 0.29, 0.99);
+        }
+      }
+    }
+    >span{
+      transform: translateX(0%) !important;
+    }
+  }
+}
+
+//以下個別のtransition指定
+.is-invasion.fadeInRightSkew,
+.is-invasion.fadeInLeftSkew {
+  transition: transform 1s $ease-outin, opacity .6s;
+}
+
+.is-invasion.fadeInUp,
+.is-invasion.fadeInDown {
+  transition: transform 1.8s .5s $ease-out, opacity .5s .5s;
+}
+
+.is-invasion.scaleUpIn,
+.is-invasion.scaleUpInOver,
+.is-invasion.scaleDownIn,
+.is-invasion.scaleDownInOver {
+  transition-property: transform, opacity;
+  transition-duration: .5s, 2s;
+  transition-timing-function: $ease-out, ease-in;
+}
+
+.is-invasion.scaleBaloon{
+  transition: transform .3s .1s $ease-out,opacity .2s .1s ease-in;
+  &.is-current{
+    transition: transform .3s $ease-out,opacity .2s ease-in;
+  }
+}
+
+.is-invasion.scalePop {
+  transition: transform .3s $ease-out;
+}
+
+.is-invasion.leanInLeft {
+  transition: transform .6s .1s $ease-out, opacity .3s .2s;
+}
+
+.is-invasion.maskDown {
+  &::before,
+  &::after {
+    transform: translateY(200.1%);
+    transition: .7s $ease-out;
+  }
+}
+
+@for $i from 1 through 10 {
+  .delay#{$i} {
+    transition-delay: #{0.1 * $i}s;
+  }
+}

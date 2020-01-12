@@ -1,0 +1,19 @@
+<% include('./const/_path') %>
+<% include('./const/_siteData') %>
+<!DOCTYPE html>
+<html lang="ja" data-script-enabled="true">
+<%- include('./base/_header') %>
+<body id="<%- name %>">
+    <%- include('./modules/project/_p-loading') %>
+    <div id="wrapper">
+        <div class="container js-smooth-scroll" id="container" data-namespace="<%- name %>">
+            <div class="inner js-smooth-scroll-inner">
+                <main id="main" role="main">
+                    <%- include('./pages/_' + name) %>
+                </main>
+            </div>
+        </div>
+    </div>
+    <%- include('./base/_footer') %>
+</body>
+</html>

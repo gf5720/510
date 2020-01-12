@@ -1,0 +1,13 @@
+<%
+var baseData = data.base;
+var pageData = data.pages[name] ? data.pages[name] : {};
+SITE_DATA = {
+    title: pageData.title ? pageData.title + baseData.separator + baseData.title : baseData.title,
+    description: pageData.description  ? pageData.description : baseData.description,
+    url: pageData.url ? baseData.url + pageData.url : baseData.url,
+    ogType: pageData.ogType ? pageData.ogType : baseData.ogType,
+    ogLocale: pageData.ogLocale ? pageData.ogLocale : baseData.ogLocale,
+    twType: pageData.twType ? pageData.twType : baseData.twType,
+    twSite: pageData.twSite ? pageData.twSite : baseData.twSite,
+}
+%>

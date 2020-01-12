@@ -1,0 +1,44 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <script>
+    var ua = navigator.userAgent;
+    var mobile = ua.indexOf('iPhone') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0;
+    var tablet = ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0;
+    if (!mobile && tablet) {
+        document.write('<meta name="viewport" content="width=1280">');
+    } else {
+        document.write('<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">');
+    }
+    </script>
+    <meta name="description" content="<%- SITE_DATA.description %>">
+    <meta name="Keywords" content="箱根,パン,箱根パンコレクション,箱根ナビ,スタンプラリー,キャンペーン,小田急箱根ホールディングス,箱根フリーパス" />
+    <meta name="language" content="ja">
+    <meta name="robots" content="">
+    <title><%- SITE_DATA.title %></title>
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:title" content="<%- SITE_DATA.title %>">
+    <meta property="og:description" content="<%- SITE_DATA.description %>">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="<%- SITE_DATA.title %>">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="<%- PATH.image %>/common/ogp/ogp.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<%- SITE_DATA.title %>">
+    <meta name="twitter:description" content="<%- SITE_DATA.description %>">
+    <meta name="twitter:image" content="https://www.hakonenavi.jp/cp/pancollection/images/common/ogp/ogp.png">
+    <link rel="stylesheet" href="<%- PATH.root %>css/style.css">
+    <link rel="shortcut icon" href="<%- PATH.image %>/common/ogp/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="<%- PATH.image %>/common/ogp/apple-touch-icon-57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="<%- PATH.image %>/common/ogp/apple-touch-icon-60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="<%- PATH.image %>/common/ogp/apple-touch-icon-72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="<%- PATH.image %>/common/ogp/apple-touch-icon-76.png">
+    <link rel="apple-touch-icon" sizes="96x96" href="<%- PATH.image %>/common/ogp/apple-touch-icon-96.png">
+    <!-- <link rel="apple-touch-icon" sizes="114x114" href="<%- PATH.image %>/common/ogp/apple-touch-icon-114.png"> -->
+    <link rel="apple-touch-icon" sizes="120x120" href="<%- PATH.image %>/common/ogp/apple-touch-icon-120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="<%- PATH.image %>/common/ogp/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="<%- PATH.image %>/common/ogp/apple-touch-icon-152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="<%- PATH.image %>/common/ogp/apple-touch-icon-180.png">
+    <link rel="apple-touch-icon" sizes="190x190" href="<%- PATH.image %>/common/ogp/apple-touch-icon-190.png">
+
+</head>

@@ -1,0 +1,126 @@
+$root: '.p-mv';
+
+#{$root} {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    .image{
+        position: absolute;
+        top: 25%;
+        height: 50%;
+        left: 25%;
+        width: 50%;
+        background-image: url('../images/common/mv-w.jpg');
+        background-size: cover;
+        background-position: right center;
+        z-index: -1;
+        opacity: 0 !important;
+    }
+    .inner{
+        // padding-bottom: 50px;
+        // color: #5f2d09;
+        .t{
+            white-space: nowrap;
+            font-size: 40px;
+            letter-spacing: 0.15em;
+            opacity: 0;
+            svg{
+                width: 450px;
+                @include max-screen($breakpoint-sp) {
+                    width: 350px;
+                }
+                @include max-screen(350) {
+                    width: 300px;
+                }
+            }
+        }
+        .n{
+            font-size: 26px;
+            letter-spacing: 0.2em;
+            display: block;
+            margin-top: 10px;
+            opacity: 0;
+            @include max-screen($breakpoint-sp) {
+                font-size: 16px;
+            }
+        }
+        .d{
+            font-size: 26px;
+            letter-spacing: 0.2em;
+            display: block;
+            margin-top: 10px;
+            opacity: 0;
+            @include max-screen($breakpoint-sp) {
+                font-size: 16px;
+            }
+        }
+    }
+    .bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        .i{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            width: 300px;
+            height: auto;
+            @include max-screen($breakpoint-sp) {
+                width: 150px;
+            }
+            &.is-t-r{
+                top: 0;
+                right: 0;
+                transform-origin: top right;
+            }
+            &.is-t-l{
+                top: 0;
+                left: 0;
+                transform-origin: top left;
+            }
+            &.is-b-r{
+                bottom: 0;
+                right: 0;
+                transform-origin: bottom right;
+            }
+            &.is-b-l{
+                bottom: 0;
+                left: 0;
+                transform-origin: bottom left;
+            }
+        }
+    }
+}
+
+
+body.is-load-end{
+    #{$root}{
+        .inner{
+            .t.is-invasion{
+                transition: transform 1.8s 2.75s $ease-out, opacity .5s 2.75s;
+            }
+            .n.is-invasion{
+                transition: transform 1.8s 3s $ease-out, opacity .5s 3s;
+            }
+            .d.is-invasion{
+                transition: transform 1.8s 3.25s $ease-out, opacity .5s 3.25s;
+            }
+        }
+        .bg{
+            &.is-invasion{
+                .i{
+                    opacity: 0.9;
+                    // transform: scale(1);
+                    transition: all 2s 1s $ease-out;
+                }
+            }
+        }
+    }
+  }

@@ -1,0 +1,56 @@
+$root: '.p-profile';
+
+#{$root} {
+    text-align: center;
+    margin-top: 100px;
+    padding-bottom: 150px;
+    position: relative;
+    .header{
+        .t{
+            font-size: 27px;
+            letter-spacing: 0.14em;
+            // font-weight: bold;
+        }
+    }
+    .body{
+        margin-top: 40px;
+    }
+    &__list{
+        display: flex;
+        justify-content: center;
+        @include max-screen($breakpoint-sp) {
+            flex-direction: column;
+        }
+    }
+    &__item{
+        margin-top: 50px;
+        width: 400px;
+        @include max-screen($breakpoint-sp) {
+            width: auto;
+        }
+        .image{
+            width: 200px;
+        }
+        >.name{
+            font-size: 16px;
+            letter-spacing: 0.14em;
+            margin-top: 20px;
+            >span{
+                display: block;
+                &:nth-of-type(2){
+                    font-size: 12px;
+                }
+            }
+        }
+        .inner{
+            margin-top: 20px;
+        }
+        .profile{
+            // display: flex;
+            // justify-content: flex-start;
+            width: 300px;
+            margin: 20px auto 0;
+            text-align: center;
+        }
+    }
+}

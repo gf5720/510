@@ -1,0 +1,28 @@
+@mixin max-screen($break-point) {
+    @media screen and (max-width: $break-point + px) {
+        @content;
+    }
+}
+
+@mixin min-screen($break-point) {
+    @media screen and (min-width: ($break-point + 1) + px) {
+        @content;
+    }
+}
+
+@mixin between-screen($max-size, $min-size) {
+    @media screen and (max-width: $max-size + px) and (min-width: ($min-size + 1) + px) {
+        @content;
+    }
+}
+
+
+@mixin font-en-400() {
+    font-family: $font-family-en;
+    font-weight: 400;
+}
+
+@mixin font-en-500() {
+    font-family: $font-family-en;
+    font-weight: 500;
+}

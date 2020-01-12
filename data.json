@@ -1,0 +1,20 @@
+{
+    "base": {
+        "site": "",
+        "url": "",
+        "title": "",
+        "separator": " | ",
+        "description": "",
+        "ogType": "website",
+        "ogLocale": "ja_JP",
+        "twType": "summary",
+        "twSite": "@account"
+    },
+    "pages": {
+        "index": {
+            "title": "",
+            "description": "",
+            "keywords": ""
+        }
+    }
+}

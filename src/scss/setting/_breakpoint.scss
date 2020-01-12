@@ -1,0 +1,18 @@
+$breakpoint-max: 1800px;
+$breakpoint-pc: 1600px;
+$breakpoint-tb: 1060px;
+$breakpoint-sp: 800;
+$breakpoint-mini: 600;
+$breakpoint-se: 360;
+
+@mixin max-screen($break-point) {
+    @media screen and (max-width: $break-point + px) {
+        @content;
+    }
+}
+
+@mixin min-screen($break-point) {
+    @media screen and (min-width: $break-point + px) {
+        @content;
+    }
+}

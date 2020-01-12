@@ -1,0 +1,38 @@
+$root: '.p-msg';
+
+#{$root} {
+    text-align: center;
+    margin-top: 30px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    @include max-screen(350) {
+        height: auto;
+        padding: 50px 0;
+    }
+    .header{
+        .t{
+            font-size: 27px;
+            letter-spacing: 0.14em;
+        }
+    }
+    .body{
+        margin-top: 40px;
+        p{
+            font-size: 18px;
+            letter-spacing: 0.14em;
+            line-height: 40px;
+            @include max-screen($breakpoint-sp) {
+                font-size: 14px;
+                letter-spacing: 0.1em;
+            }
+            @include max-screen(350) {
+                font-size: 12px;
+                letter-spacing: 0.1em;
+            }
+        }
+    }
+}
