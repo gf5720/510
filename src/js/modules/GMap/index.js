@@ -5,8 +5,8 @@ import gMapMarker from './gMapMarker';
 
 const OPTION = {
   center: {
-    lat: 35.686202,
-    lng: 139.772734
+    lat: 35.666770, 
+    lng: 139.709648
   },
   zoom: 20,
   zoomControl: false,
@@ -38,7 +38,20 @@ class GMap extends gMapStyle(gMapMarker(GMapCore)) {
     this.$window.on('resize', this.onResize);
 
     this.addMarker('pin');
-    this.renderMarker('pin');
+
+    this.addMarker('ruanje',{
+      position: {
+        lat: 35.665229,
+        lng: 139.714461
+      },
+      title: 'ルアンジェ協会',
+      label: '',
+      draggable: false,
+      animation: '',
+      icon: ''
+    });
+
+    this.renderMarker();
   }
   _onResize() {
     let center = this.map.getCenter();

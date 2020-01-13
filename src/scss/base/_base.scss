@@ -21,8 +21,8 @@ body {
     background-size: 100% auto;
     width: 100%;
     min-width: 1000px;
-    background-image: url(../images/common/bg.png);
-    background-size: 300px auto;
+    background-image: url(../images/common/bg-s.jpg);
+    background-size: 600px auto;
     @include max-screen($breakpoint-sp) {
         min-width: 0px;
         width: 100%;

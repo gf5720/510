@@ -84,8 +84,20 @@ $root: '.p-info';
                 // position: relative;
                 // top: -8px;
                 display: block;
-                margin-top: 5px
+                margin-top: 5px;
+                a{
+                    display: block;
+                    margin-top: 5px;
+                    color: #2063ca;
+                }
             }
+        }
+    }
+    &__map{
+        max-width: 1000px;
+        margin: 40px auto;
+        .map{
+            height: 400px;
         }
     }
     &__contact{

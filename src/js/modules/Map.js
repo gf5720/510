@@ -4,10 +4,10 @@ import GMap from '../modules/GMap/index';
 const OPTION = {
   fullscreenControl: true,
   center: {
-    lat: 35.663385,
-    lng: 139.668572
+    lat: 35.667470, 
+    lng: 139.709648
   },
-  zoom: 16.6
+  zoom: 16
 };
 
 const STYLE = [
@@ -329,7 +329,7 @@ class Map {
     let promise = new Promise((resolve, reject) => {
       let script = document.createElement('script');
       script.type = 'text/javascript';
-      script.src = 'https://maps.google.com/maps/api/js?key=AIzaSyAS_3gCcxGrDVyrFjVYdwnUmNi1TmM1LpE';
+      script.src = 'https://maps.google.com/maps/api/js?key=AIzaSyDxTpX7hRvOkOYeR9EERhpOxhbO4e-jQ3A';
       document.getElementsByTagName('head')[0].appendChild(script);
       script.onload = () => {
         resolve();

@@ -2,10 +2,10 @@ import $ from 'jquery'
 
 const MARKER = {
   position: {
-    lat: 35.663385,
-    lng: 139.668572
+    lat: 35.669093, 
+    lng: 139.706139
   },
-  title: 'INFLANDING',
+  title: 'ベニーレベニーレ',
   label: '',
   draggable: false,
   animation: '',
@@ -23,7 +23,6 @@ function gMapMarker(base = null) {
       super(map);
       this.markersData = {};
       this.marker = {};
-      MARKER.icon = '/inflanding/images/common/map-pin.png';
     }
 
     /**

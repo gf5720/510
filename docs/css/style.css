@@ -629,8 +629,8 @@ body {
   background-size: 100% auto;
   width: 100%;
   min-width: 1000px;
-  background-image: url(../images/common/bg.png);
-  background-size: 300px auto;
+  background-image: url(../images/common/bg-s.jpg);
+  background-size: 600px auto;
 }
 
 @media screen and (max-width: 800px) {
@@ -938,158 +938,158 @@ button {
 
 .inTitle svg path:nth-of-type(0), .inTitle svg polygon:nth-of-type(0), .inTitle svg rect:nth-of-type(0) {
   opacity: 0;
-  -webkit-transform: translate(-24px, 27px);
-          transform: translate(-24px, 27px);
+  -webkit-transform: translate(-57px, 41px);
+          transform: translate(-57px, 41px);
 }
 
 .inTitle svg path:nth-of-type(1), .inTitle svg polygon:nth-of-type(1), .inTitle svg rect:nth-of-type(1) {
   opacity: 0;
-  -webkit-transform: translate(-32px, 35px);
-          transform: translate(-32px, 35px);
+  -webkit-transform: translate(-30px, 68px);
+          transform: translate(-30px, 68px);
 }
 
 .inTitle svg path:nth-of-type(2), .inTitle svg polygon:nth-of-type(2), .inTitle svg rect:nth-of-type(2) {
   opacity: 0;
-  -webkit-transform: translate(-97px, 81px);
-          transform: translate(-97px, 81px);
+  -webkit-transform: translate(-88px, 32px);
+          transform: translate(-88px, 32px);
 }
 
 .inTitle svg path:nth-of-type(3), .inTitle svg polygon:nth-of-type(3), .inTitle svg rect:nth-of-type(3) {
   opacity: 0;
-  -webkit-transform: translate(-61px, 78px);
-          transform: translate(-61px, 78px);
+  -webkit-transform: translate(-100px, 79px);
+          transform: translate(-100px, 79px);
 }
 
 .inTitle svg path:nth-of-type(4), .inTitle svg polygon:nth-of-type(4), .inTitle svg rect:nth-of-type(4) {
   opacity: 0;
-  -webkit-transform: translate(-83px, 12px);
-          transform: translate(-83px, 12px);
+  -webkit-transform: translate(-44px, 66px);
+          transform: translate(-44px, 66px);
 }
 
 .inTitle svg path:nth-of-type(5), .inTitle svg polygon:nth-of-type(5), .inTitle svg rect:nth-of-type(5) {
   opacity: 0;
-  -webkit-transform: translate(-50px, 79px);
-          transform: translate(-50px, 79px);
+  -webkit-transform: translate(-64px, 11px);
+          transform: translate(-64px, 11px);
 }
 
 .inTitle svg path:nth-of-type(6), .inTitle svg polygon:nth-of-type(6), .inTitle svg rect:nth-of-type(6) {
   opacity: 0;
-  -webkit-transform: translate(-12px, 86px);
-          transform: translate(-12px, 86px);
+  -webkit-transform: translate(-95px, 87px);
+          transform: translate(-95px, 87px);
 }
 
 .inTitle svg path:nth-of-type(7), .inTitle svg polygon:nth-of-type(7), .inTitle svg rect:nth-of-type(7) {
   opacity: 0;
-  -webkit-transform: translate(-77px, 61px);
-          transform: translate(-77px, 61px);
+  -webkit-transform: translate(-30px, 82px);
+          transform: translate(-30px, 82px);
 }
 
 .inTitle svg path:nth-of-type(8), .inTitle svg polygon:nth-of-type(8), .inTitle svg rect:nth-of-type(8) {
   opacity: 0;
-  -webkit-transform: translate(-34px, 65px);
-          transform: translate(-34px, 65px);
+  -webkit-transform: translate(-8px, 29px);
+          transform: translate(-8px, 29px);
 }
 
 .inTitle svg path:nth-of-type(9), .inTitle svg polygon:nth-of-type(9), .inTitle svg rect:nth-of-type(9) {
   opacity: 0;
-  -webkit-transform: translate(-48px, 38px);
-          transform: translate(-48px, 38px);
+  -webkit-transform: translate(-20px, 29px);
+          transform: translate(-20px, 29px);
 }
 
 .inTitle svg path:nth-of-type(10), .inTitle svg polygon:nth-of-type(10), .inTitle svg rect:nth-of-type(10) {
   opacity: 0;
-  -webkit-transform: translate(-39px, 19px);
-          transform: translate(-39px, 19px);
+  -webkit-transform: translate(-98px, 22px);
+          transform: translate(-98px, 22px);
 }
 
 .inTitle svg path:nth-of-type(11), .inTitle svg polygon:nth-of-type(11), .inTitle svg rect:nth-of-type(11) {
   opacity: 0;
-  -webkit-transform: translate(-43px, 97px);
-          transform: translate(-43px, 97px);
+  -webkit-transform: translate(-36px, 89px);
+          transform: translate(-36px, 89px);
 }
 
 .inTitle svg path:nth-of-type(12), .inTitle svg polygon:nth-of-type(12), .inTitle svg rect:nth-of-type(12) {
   opacity: 0;
-  -webkit-transform: translate(-27px, 81px);
-          transform: translate(-27px, 81px);
+  -webkit-transform: translate(-13px, 6px);
+          transform: translate(-13px, 6px);
 }
 
 .inTitle svg path:nth-of-type(13), .inTitle svg polygon:nth-of-type(13), .inTitle svg rect:nth-of-type(13) {
   opacity: 0;
-  -webkit-transform: translate(-64px, 95px);
-          transform: translate(-64px, 95px);
+  -webkit-transform: translate(-85px, 88px);
+          transform: translate(-85px, 88px);
 }
 
 .inTitle svg path:nth-of-type(14), .inTitle svg polygon:nth-of-type(14), .inTitle svg rect:nth-of-type(14) {
   opacity: 0;
-  -webkit-transform: translate(-91px, 81px);
-          transform: translate(-91px, 81px);
+  -webkit-transform: translate(-86px, 1px);
+          transform: translate(-86px, 1px);
 }
 
 .inTitle svg path:nth-of-type(15), .inTitle svg polygon:nth-of-type(15), .inTitle svg rect:nth-of-type(15) {
   opacity: 0;
-  -webkit-transform: translate(-70px, 65px);
-          transform: translate(-70px, 65px);
+  -webkit-transform: translate(-74px, 14px);
+          transform: translate(-74px, 14px);
 }
 
 .inTitle svg path:nth-of-type(16), .inTitle svg polygon:nth-of-type(16), .inTitle svg rect:nth-of-type(16) {
   opacity: 0;
-  -webkit-transform: translate(-28px, 4px);
-          transform: translate(-28px, 4px);
+  -webkit-transform: translate(-90px, 74px);
+          transform: translate(-90px, 74px);
 }
 
 .inTitle svg path:nth-of-type(17), .inTitle svg polygon:nth-of-type(17), .inTitle svg rect:nth-of-type(17) {
   opacity: 0;
-  -webkit-transform: translate(-76px, 85px);
-          transform: translate(-76px, 85px);
+  -webkit-transform: translate(-80px, 61px);
+          transform: translate(-80px, 61px);
 }
 
 .inTitle svg path:nth-of-type(18), .inTitle svg polygon:nth-of-type(18), .inTitle svg rect:nth-of-type(18) {
   opacity: 0;
-  -webkit-transform: translate(-68px, 52px);
-          transform: translate(-68px, 52px);
+  -webkit-transform: translate(-25px, 56px);
+          transform: translate(-25px, 56px);
 }
 
 .inTitle svg path:nth-of-type(19), .inTitle svg polygon:nth-of-type(19), .inTitle svg rect:nth-of-type(19) {
   opacity: 0;
-  -webkit-transform: translate(-54px, 10px);
-          transform: translate(-54px, 10px);
+  -webkit-transform: translate(-75px, 81px);
+          transform: translate(-75px, 81px);
 }
 
 .inTitle svg path:nth-of-type(20), .inTitle svg polygon:nth-of-type(20), .inTitle svg rect:nth-of-type(20) {
   opacity: 0;
-  -webkit-transform: translate(-48px, 35px);
-          transform: translate(-48px, 35px);
+  -webkit-transform: translate(-52px, 77px);
+          transform: translate(-52px, 77px);
 }
 
 .inTitle svg path:nth-of-type(21), .inTitle svg polygon:nth-of-type(21), .inTitle svg rect:nth-of-type(21) {
   opacity: 0;
-  -webkit-transform: translate(-100px, 76px);
-          transform: translate(-100px, 76px);
+  -webkit-transform: translate(-49px, 64px);
+          transform: translate(-49px, 64px);
 }
 
 .inTitle svg path:nth-of-type(22), .inTitle svg polygon:nth-of-type(22), .inTitle svg rect:nth-of-type(22) {
   opacity: 0;
-  -webkit-transform: translate(-78px, 64px);
-          transform: translate(-78px, 64px);
+  -webkit-transform: translate(-95px, 6px);
+          transform: translate(-95px, 6px);
 }
 
 .inTitle svg path:nth-of-type(23), .inTitle svg polygon:nth-of-type(23), .inTitle svg rect:nth-of-type(23) {
   opacity: 0;
-  -webkit-transform: translate(-9px, 98px);
-          transform: translate(-9px, 98px);
+  -webkit-transform: translate(-36px, 91px);
+          transform: translate(-36px, 91px);
 }
 
 .inTitle svg path:nth-of-type(24), .inTitle svg polygon:nth-of-type(24), .inTitle svg rect:nth-of-type(24) {
   opacity: 0;
-  -webkit-transform: translate(-42px, 93px);
-          transform: translate(-42px, 93px);
+  -webkit-transform: translate(-48px, 70px);
+          transform: translate(-48px, 70px);
 }
 
 .inTitle svg path:nth-of-type(25), .inTitle svg polygon:nth-of-type(25), .inTitle svg rect:nth-of-type(25) {
   opacity: 0;
-  -webkit-transform: translate(-85px, 78px);
-          transform: translate(-85px, 78px);
+  -webkit-transform: translate(-9px, 79px);
+          transform: translate(-9px, 79px);
 }
 
 .inList .inItem svg {
@@ -1917,6 +1917,21 @@ button {
   margin-top: 5px;
 }
 
+.p-info__item .item .r a {
+  display: block;
+  margin-top: 5px;
+  color: #2063ca;
+}
+
+.p-info__map {
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+.p-info__map .map {
+  height: 400px;
+}
+
 .p-info__contact {
   margin-top: 100px;
 }
@@ -2195,6 +2210,7 @@ body.is-load-end .p-loading > div svg path {
   left: 0;
   width: 100%;
   height: 100%;
+  display: none;
 }
 
 .p-mv .bg .i {
@@ -2202,7 +2218,6 @@ body.is-load-end .p-loading > div svg path {
   width: 100%;
   height: 100%;
   opacity: 0;
-  width: 300px;
   height: auto;
 }
 
@@ -2217,6 +2232,7 @@ body.is-load-end .p-loading > div svg path {
   right: 0;
   -webkit-transform-origin: top right;
           transform-origin: top right;
+  width: 300px;
 }
 
 .p-mv .bg .i.is-t-l {
@@ -2224,6 +2240,8 @@ body.is-load-end .p-loading > div svg path {
   left: 0;
   -webkit-transform-origin: top left;
           transform-origin: top left;
+  height: 300px;
+  width: auto;
 }
 
 .p-mv .bg .i.is-b-r {
@@ -2231,6 +2249,8 @@ body.is-load-end .p-loading > div svg path {
   right: 0;
   -webkit-transform-origin: bottom right;
           transform-origin: bottom right;
+  height: 300px;
+  width: auto;
 }
 
 .p-mv .bg .i.is-b-l {
@@ -2238,6 +2258,7 @@ body.is-load-end .p-loading > div svg path {
   left: 0;
   -webkit-transform-origin: bottom left;
           transform-origin: bottom left;
+  width: 300px;
 }
 
 body.is-load-end .p-mv .inner .t.is-invasion {
