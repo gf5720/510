@@ -100,6 +100,53 @@ $root: '.p-info';
             height: 400px;
         }
     }
+    &__guide{
+        &-list{
+
+        }
+        &-item{
+            margin-top: 50px;
+            .t{
+                font-size: 22px;
+                letter-spacing: 0.14em;
+            }
+            p{
+                font-size: 14px;
+                letter-spacing: 0.14em;
+                line-height: 26px;
+            }
+            .text{
+                margin-top: 20px;
+            }
+            ul{
+                width: 600px;
+                display: flex;
+                flex-wrap: wrap;
+                margin: 20px auto;
+                justify-content: center;
+                padding-left: 5px;
+                li{
+                    display: flex;
+                    justify-content: space-between;
+                    width: 50%;
+                    font-size: 14px;
+                    letter-spacing: 0.14em;
+                    &:nth-of-type(odd){
+                        padding-right: 30px;
+                    }
+                    &:nth-of-type(even){
+                        padding-left: 30px;
+                    }
+                    .l{
+
+                    }
+                    .r{
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
+    }
     &__contact{
         margin-top: 100px;
         p{
