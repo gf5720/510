@@ -105,7 +105,7 @@ $root: '.p-info';
 
         }
         &-item{
-            margin-top: 50px;
+            margin-top: 80px;
             .t{
                 font-size: 22px;
                 letter-spacing: 0.14em;
@@ -125,6 +125,9 @@ $root: '.p-info';
                 margin: 20px auto;
                 justify-content: center;
                 padding-left: 5px;
+                @include max-screen($breakpoint-sp) {
+                    width: auto;
+                }
                 li{
                     display: flex;
                     justify-content: space-between;
