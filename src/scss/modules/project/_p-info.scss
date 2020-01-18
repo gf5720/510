@@ -114,6 +114,17 @@ $root: '.p-info';
                 font-size: 14px;
                 letter-spacing: 0.14em;
                 line-height: 26px;
+                @include max-screen($breakpoint-sp) {
+                    font-size: 12px;
+                    letter-spacing: 0.1em;
+                }
+                br.is-sp{
+                    display: none;
+                    @include max-screen($breakpoint-sp) {
+                        display: block;
+                    }
+                }
+                
             }
             .text{
                 margin-top: 20px;
@@ -126,7 +137,8 @@ $root: '.p-info';
                 justify-content: center;
                 padding-left: 5px;
                 @include max-screen($breakpoint-sp) {
-                    width: auto;
+                    width: 60%;
+                    flex-direction: column;
                 }
                 li{
                     display: flex;
@@ -134,11 +146,23 @@ $root: '.p-info';
                     width: 50%;
                     font-size: 14px;
                     letter-spacing: 0.14em;
+                    @include max-screen($breakpoint-sp) {
+                        font-size: 12px;
+                        letter-spacing: 0.1em;
+                        width: auto;
+                        justify-content: space-between;
+                    }
                     &:nth-of-type(odd){
                         padding-right: 30px;
+                        @include max-screen($breakpoint-sp) {
+                            padding-right: 0;
+                        }
                     }
                     &:nth-of-type(even){
                         padding-left: 30px;
+                        @include max-screen($breakpoint-sp) {
+                            padding-left: 0;
+                        }
                     }
                     .l{
 

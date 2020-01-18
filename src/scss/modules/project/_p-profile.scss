@@ -30,6 +30,18 @@ $root: '.p-profile';
         }
         .image{
             width: 200px;
+            &.is-pc{
+                display: inline-block;
+                @include max-screen($breakpoint-sp) {
+                    display: none;
+                }
+            }
+            &.is-sp{
+                display: none;
+                @include max-screen($breakpoint-sp) {
+                    display: inline-block;
+                }
+            }
         }
         >.name{
             font-size: 16px;

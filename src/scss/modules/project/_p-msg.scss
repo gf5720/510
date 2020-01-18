@@ -26,8 +26,8 @@ $root: '.p-msg';
             letter-spacing: 0.14em;
             line-height: 40px;
             @include max-screen($breakpoint-sp) {
-                font-size: 14px;
-                letter-spacing: 0.1em;
+                font-size: 13px;
+                letter-spacing: 0.07em;
             }
             @include max-screen(350) {
                 font-size: 12px;

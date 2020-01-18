@@ -8,6 +8,9 @@ $root: '.p-mv';
     align-items: center;
     position: relative;
     text-align: center;
+    @include max-screen($breakpoint-sp) {
+        height: 90vh;
+    }
     .image{
         position: absolute;
         top: 25%;
@@ -30,11 +33,14 @@ $root: '.p-mv';
             opacity: 0;
             svg{
                 width: 450px;
+                height: 123px;
                 @include max-screen($breakpoint-sp) {
-                    width: 350px;
+                    width: 320px;
+                    height: 88px;
                 }
                 @include max-screen(350) {
                     width: 300px;
+                    height: 82px;
                 }
             }
         }
@@ -60,13 +66,13 @@ $root: '.p-mv';
         }
     }
     .t.is-invasion.fadeInUp{
-        transition: transform 1.8s 3s $ease-out, opacity .5s 3s;
+        transition: transform 1.8s 3.2s $ease-out, opacity .5s 3.2s;
     }
     .n.is-invasion.fadeInUp{
-        transition: transform 1.8s 3.3s $ease-out, opacity .5s 3.3s;
+        transition: transform 1.8s 3.5s $ease-out, opacity .5s 3.5s;
     }
     .d.is-invasion.fadeInUp{
-        transition: transform 1.8s 3.6s $ease-out, opacity .5s 3.6s;
+        transition: transform 1.8s 3.7s $ease-out, opacity .5s 3.7s;
     }
 }
 

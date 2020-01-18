@@ -36,6 +36,11 @@ $root: '.p-loading';
     letter-spacing: 0.15em;
       svg{
         width: 180px;
+        height: 101px;
+        @include max-screen($breakpoint-sp) {
+          width: 140px;
+          height: 42px;
+        }
         path{
           stroke-dasharray: 1000;
           stroke-dashoffset: 1000;
