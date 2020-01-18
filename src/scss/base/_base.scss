@@ -4,6 +4,11 @@
 
 html {}
 
+#wrapper{
+    position: relative;
+    z-index: 5;
+}
+
 body {
     position: relative;
     -webkit-text-size-adjust: 100%;

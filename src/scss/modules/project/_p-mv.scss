@@ -59,74 +59,29 @@ $root: '.p-mv';
             }
         }
     }
-    .bg{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: none;
-        .i{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            
-            height: auto;
-            @include max-screen($breakpoint-sp) {
-                width: 150px;
-            }
-            &.is-t-r{
-                top: 0;
-                right: 0;
-                transform-origin: top right;
-                width: 300px;
-            }
-            &.is-t-l{
-                top: 0;
-                left: 0;
-                transform-origin: top left;
-                height: 300px;
-                width: auto;
-            }
-            &.is-b-r{
-                bottom: 0;
-                right: 0;
-                transform-origin: bottom right;
-                height: 300px;
-                width: auto;
-            }
-            &.is-b-l{
-                bottom: 0;
-                left: 0;
-                transform-origin: bottom left;
-                width: 300px;
-            }
-        }
+    .t.is-invasion.fadeInUp{
+        transition: transform 1.8s 3s $ease-out, opacity .5s 3s;
+    }
+    .n.is-invasion.fadeInUp{
+        transition: transform 1.8s 3.3s $ease-out, opacity .5s 3.3s;
+    }
+    .d.is-invasion.fadeInUp{
+        transition: transform 1.8s 3.6s $ease-out, opacity .5s 3.6s;
     }
 }
 
 
-body.is-load-end{
+body.is-load-end.is-load-scroll{
     #{$root}{
         .inner{
             .t.is-invasion{
-                transition: transform 1.8s 2.75s $ease-out, opacity .5s 2.75s;
+                transition: transform 1.8s .5s $ease-out, opacity .5s .5s;
             }
             .n.is-invasion{
-                transition: transform 1.8s 3s $ease-out, opacity .5s 3s;
+                transition: transform 1.8s .8s $ease-out, opacity .5s .8s;
             }
             .d.is-invasion{
-                transition: transform 1.8s 3.25s $ease-out, opacity .5s 3.25s;
-            }
-        }
-        .bg{
-            &.is-invasion{
-                .i{
-                    opacity: 0.9;
-                    // transform: scale(1);
-                    transition: all 2s 1s $ease-out;
-                }
+                transition: transform 1.8s 1.1s $ease-out, opacity .5s 1.1s;
             }
         }
     }
