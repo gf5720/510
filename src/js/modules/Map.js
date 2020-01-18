@@ -1,13 +1,14 @@
 import $ from 'jquery'
 import GMap from '../modules/GMap/index';
-
+const ua = navigator.userAgent;
+const mobile = ua.indexOf('iPhone') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0;
 const OPTION = {
   fullscreenControl: true,
   center: {
     lat: 35.667470, 
     lng: 139.709648
   },
-  zoom: 16
+  zoom: mobile ? 15 : 15.8
 };
 
 const STYLE = [
