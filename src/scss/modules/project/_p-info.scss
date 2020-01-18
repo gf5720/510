@@ -55,6 +55,12 @@ $root: '.p-info';
     }
     &__item{
         margin-top: 50px;
+        @include max-screen($breakpoint-sp) {
+            margin-top: 70px;
+            &:nth-of-type(1){
+                margin-top: 50px;
+            }
+        }
         >.t{
             font-size: 22px;
             letter-spacing: 0.14em;
@@ -76,6 +82,9 @@ $root: '.p-info';
                 font-size: 16px;
                 letter-spacing: 0.14em;
                 display: block;
+                @include max-screen($breakpoint-sp) {
+                    font-size: 15px;
+                }
             }
             .r{
                 font-size: 16px;
@@ -85,6 +94,9 @@ $root: '.p-info';
                 // top: -8px;
                 display: block;
                 margin-top: 5px;
+                @include max-screen($breakpoint-sp) {
+                    font-size: 15px;
+                }
                 a{
                     display: block;
                     margin-top: 5px;
