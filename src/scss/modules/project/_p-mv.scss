@@ -55,7 +55,12 @@ $root: '.p-mv';
         position: relative;
         z-index: 3;
         @include max-screen($breakpoint-sp) {
-            margin-top: 50px;
+            // margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
         }
         .t{
             white-space: nowrap;

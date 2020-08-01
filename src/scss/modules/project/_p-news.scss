@@ -3,15 +3,18 @@ $root: '.p-news';
 #{$root} {
     text-align: center;
     margin-top: 30px;
-    height: 100vh;
+    // height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
+    display: block;
+    padding: 30px 0;
     @include max-screen(350) {
         height: auto;
         padding: 50px 0;
+        display: block;
     }
     .header{
         .t{
@@ -19,8 +22,11 @@ $root: '.p-news';
             letter-spacing: 0.14em;
         }
     }
+
     .body{
-        margin-top: 40px;
+        padding: 0 15px;
+        max-width: 600px;
+        margin: 40px auto 0;
         p{
             font-size: 18px;
             letter-spacing: 0.14em;
@@ -28,10 +34,11 @@ $root: '.p-news';
             @include max-screen($breakpoint-sp) {
                 font-size: 13px;
                 letter-spacing: 0.07em;
+                line-height: 22px;
+                text-align: center;
             }
             @include max-screen(350) {
-                font-size: 12px;
-                letter-spacing: 0.1em;
+                font-size: 11px;
             }
         }
     }

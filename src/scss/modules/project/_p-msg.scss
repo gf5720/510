@@ -3,7 +3,7 @@ $root: '.p-msg';
 #{$root} {
     text-align: center;
     margin-top: 30px;
-    height: 100vh;
+    // height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,6 +12,7 @@ $root: '.p-msg';
     @include max-screen(350) {
         height: auto;
         padding: 50px 0;
+        display: block;
     }
     .header{
         .t{
