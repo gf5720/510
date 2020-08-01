@@ -9,31 +9,70 @@ $root: '.p-mv';
     position: relative;
     text-align: center;
     @include max-screen($breakpoint-sp) {
-        height: 90vh;
+        height: 100vh;
+        align-items: flex-start;
     }
     .image{
         position: absolute;
-        top: 25%;
-        height: 50%;
-        left: 25%;
-        width: 50%;
-        background-image: url('../images/common/mv-w.jpg');
+        top: 0;
+        height: 100%;
+        left: 0;
+        width: 100%;
+        background-image: url('../images/common/loading.jpg');
         background-size: cover;
-        background-position: right center;
-        z-index: -1;
-        opacity: 0 !important;
+        background-position: center bottom;
+        opacity: 1;
+        z-index: 1;
+        @include max-screen($breakpoint-sp) {
+            background-image: url('../images/common/loading-sp.jpg');
+        }
+    }
+    &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(#FFFFFF,0.3);
+        z-index: 2;
+        opacity: 0.25;
+        @include max-screen($breakpoint-sp) {
+            background-image: url(../images/common/bg-s.jpg);
+            background-size: cover;
+        }
+    }
+    .arrow{
+        z-index: 3;
+        >span{
+            &:before{
+                background-color: #FFFFFF;
+            }
+        }
     }
     .inner{
-        // padding-bottom: 50px;
-        // color: #5f2d09;
+        position: relative;
+        z-index: 3;
+        @include max-screen($breakpoint-sp) {
+            margin-top: 50px;
+        }
         .t{
             white-space: nowrap;
             font-size: 40px;
             letter-spacing: 0.15em;
             opacity: 0;
+            color: #FFFFFF;
+            @include max-screen($breakpoint-sp) {
+                color: #333333;
+            }
             svg{
                 width: 450px;
                 height: 123px;
+                fill: #FFFFFF;
+                @include max-screen($breakpoint-sp) {
+                    fill: #333333;
+                }
                 @include max-screen($breakpoint-sp) {
                     width: 320px;
                     height: 88px;
@@ -50,8 +89,10 @@ $root: '.p-mv';
             display: block;
             margin-top: 10px;
             opacity: 0;
+            color: #FFFFFF;
             @include max-screen($breakpoint-sp) {
                 font-size: 16px;
+                color: #333333;
             }
         }
         .d{
@@ -60,8 +101,10 @@ $root: '.p-mv';
             display: block;
             margin-top: 10px;
             opacity: 0;
+            color: #FFFFFF;
             @include max-screen($breakpoint-sp) {
                 font-size: 16px;
+                color: #333333;
             }
         }
     }

@@ -28,7 +28,7 @@ function gMapMarker(base = null) {
     /**
      * スタイルにさらに、設定を追加する
      * @param key : スタイル名
-     * @param styleArray　: 設定内容
+     * @param styleArray : 設定内容
      */
     addMarker(key, value = {}) {
       this.markersData[key] = $.extend({}, MARKER, value);

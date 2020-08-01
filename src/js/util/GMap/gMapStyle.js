@@ -22,7 +22,7 @@ function gMapStyle(base = null) {
         /**
          * スタイルにさらに、設定を追加する
          * @param key : スタイル名
-         * @param styleArray　: 設定内容
+         * @param styleArray : 設定内容
          */
         addStyle(key, style) {
             this.styles[key].push(style)

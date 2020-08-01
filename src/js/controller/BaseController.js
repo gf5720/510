@@ -70,7 +70,7 @@ class BaseController {
                 } else {
                     //画面外に入る度クラスの付け替えをする場合のクラス
                     // if ($(e.target).hasClass('inter-toggle')) {
-                    e.target.classList.remove('is-invasion')
+                    // e.target.classList.remove('is-invasion')
                 }
             })
         }, option)
